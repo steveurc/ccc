@@ -16,5 +16,10 @@ Challenge 2:
 
 returns: repos_by_name and gazers_by_repo hashes
 
+NOTES:
+I added a github app and authentication to github in the source (not shown) to increase the calls you can make before getting rate limited.
+The solution is deployed in a load balanced environment.
+
+
 
 
