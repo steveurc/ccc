@@ -20,7 +20,7 @@ class Root::Api::V1::Ccc::GithubReposAndGazersController < ApplicationController
   private
 
   def recurse_repos_and_gazers( root_name, level=1 )
-    return if @repos_by_name[root_name] || level < 1 || root_name.blank?
+    return if root_name.blank? || @repos_by_name[root_name]
     repos = get_data( REPOS_API % root_name )
     @repos_by_name[root_name] = repos[ 0..MAX_REPOS-1 ].map { |repo| repo['name'] }
     more_gazers = []
