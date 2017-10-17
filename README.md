@@ -18,7 +18,7 @@ returns: repos_by_name and gazers_by_repo hashes
 
 NOTES:
 I added a github app and authentication to github in the source (not shown) to increase the calls you can make before getting rate limited.
-The solution is deployed in a load balanced environment.
+The solution is deployed in a load balanced environment. If CORS is needed I can add the API to our AWS API Gateway along with an optional API key and rate limiting.
 
 
 
