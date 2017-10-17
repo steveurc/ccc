@@ -18,7 +18,7 @@ class Root::Api::V1::Ccc::GithubFollowersController < ApplicationController
 
   def recurse_followers( root_name, level=1 )
     return if root_name.blank? || @followers_by_name[root_name]
-    resp = FaxoFetcher.fetch FOLLOWERS_API % root_name
+    resp = RestClient.get FOLLOWERS_API % root_name
     users = JSON.parse( resp.body )
     @followers_by_name[root_name] = users[ 0..MAX_USERS-1 ].map { |user| user['login'] }
     return if level >= MAX_DEPTH
