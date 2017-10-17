@@ -1,6 +1,6 @@
 # ccc
 
-The CCC challenge Rails controllers are embedded in a proprietary dynamic routing scheme that breaks up the Rails monolith. It is trivial exercise to add the controller code to any Rails application.
+The CCC challenge Rails controllers are embedded in a proprietary dynamic routing scheme that breaks up the Rails monolith. It is a trivial exercise to add the controller code to any Rails application.
 
 To test live versions of this code go to https://faxo.com and use the following endpoints:
 
