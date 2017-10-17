@@ -1,4 +1,4 @@
-class Root::Api::V1::Ccc::GithubFollowersController < Lib::Api::JsonController
+class Root::Api::V1::Ccc::GithubFollowersController < ApplicationController
   MAX_DEPTH = 3
   MAX_USERS = 5
   FOLLOWERS_API = "https://api.github.com/users/%s/followers"
